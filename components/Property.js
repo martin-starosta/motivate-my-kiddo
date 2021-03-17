@@ -1,7 +1,5 @@
 import React, { useReducer } from "react";
 
-import Image from "next/image";
-
 const initialState = { count: 0 };
 
 function reducer(state, action) {
@@ -22,7 +20,7 @@ function Property(props) {
 
   const imagesCount = (state.count > 0) ? state.count : 0;
   const images = [...Array(imagesCount)].map((value, index) => (
-    <Image
+    <img
       src={`/images/${icon}.svg`}
       alt="Hearth icon"
       width={32}
