@@ -1,7 +1,7 @@
-import '@styles/globals.css'
+// pages/_app.js
 
-function Application({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import "../styles/styles.scss";
+
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
-
-export default Application
